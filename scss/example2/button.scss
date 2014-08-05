@@ -1,0 +1,53 @@
+// using mixins
+
+.primary-button {
+	background: #16a085;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 0.6em 3em;
+	border-radius: 1.5em;
+	border: none;
+	position: relative;
+	overflow: hidden;
+	margin: 1em;
+
+	span {
+		position: absolute;
+		right: 1em;
+		top: 50%;
+		margin-top: -0.5em;
+	}
+
+	&:hover, &:focus {
+		background: #138a72;
+	}
+} 
+
+.secondary-button {
+	background: #838993;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 0.6em 3em;
+	border-radius: 1.5em;
+	border: none;
+	position: relative;
+	overflow: hidden;
+	margin: 1em;
+
+	span {
+		position: absolute;
+		left: 1em;
+		top: 50%;
+		margin-top: -0.5em;
+	}
+
+	&:hover, &:focus {
+		background: #767c87;
+	}
+} 

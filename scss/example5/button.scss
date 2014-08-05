@@ -1,0 +1,68 @@
+// using compass and SASS functions
+// 		- transition
+//		- adjust-lightness($color, $amount)
+//		- image-url
+
+$color-default-green: #16a085;
+$color-default-grey: #838993;
+$color-default-red: #c0392b;
+
+@mixin round-button ($bgColor, $hoverBgColor) {
+	background: $bgColor;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 0.6em 3em;
+	border-radius: 1.5em;
+	border: none;
+	position: relative;
+	overflow: hidden;
+	margin: 1em;
+
+
+	&:hover, &:focus {
+		background: $hoverBgColor;
+	}
+}
+
+
+.primary-button {
+	@include round-button($color-default-green, #138a72);
+	
+	span {
+		position: absolute;
+		right: 1em;
+		top: 50%;
+		margin-top: -0.5em;
+		width: 16px;
+		height: 16px;
+		background: url('../../images/tick.png') 0 0 no-repeat scroll;
+	}
+} 
+
+.danger-button {
+	@include round-button($color-default-red, #ab3326);
+	
+	span {
+		position: absolute;
+		right: 1em;
+		top: 50%;
+		margin-top: -0.5em;
+		width: 16px;
+		height: 16px;
+		background: url('../../images/cross.png') 0 0 no-repeat scroll;
+	}
+} 
+
+.secondary-button {
+	@include round-button($color-default-grey, #767c87);
+
+	span {
+		position: absolute;
+		left: 1em;
+		top: 50%;
+		margin-top: -0.5em;
+	}
+} 
