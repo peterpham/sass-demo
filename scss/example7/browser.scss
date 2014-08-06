@@ -1,0 +1,31 @@
+[class^="browsers-"] {
+	display:inline-block;
+	width: 256px;
+	height: 256px;
+}
+
+$browsers: chrome firefox safari internet-explorer opera;
+
+@each $i in $browsers {
+	.browsers-#{$i} {
+		background: image-url('browsers/#{$i}.png') 0 0 no-repeat scroll;
+	}
+}
+
+
+
+
+
+
+
+
+
+// @import "compass";
+// @import "compass/utilities/sprites";
+// @import "browsers/*.png";
+// @include all-browsers-sprites;
+
+
+// .browsers-ie {
+// 	@include browsers-sprite(internet-explorer);
+// }

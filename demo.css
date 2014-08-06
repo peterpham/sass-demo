@@ -20,6 +20,9 @@ body.center {
 body.center.column {
 	flex-direction: column;
 }
+.flex-wrap {
+	flex-wrap: wrap;
+}
 
 *:focus {
 	outline: none;
@@ -37,4 +40,47 @@ section {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.example {
+	display: inline-block;
+	color: #e74c3c;
+	text-decoration: none;
+	padding: 1em;
+	font-size: 1.5em;
+	position: relative;
+}
+
+.example:before {
+	position: absolute;
+	top: 0;
+	left: -5px;
+	z-index: -1;
+	box-sizing: content-box;
+	padding: 0 5px;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	background-color: #fff;
+	content: '';
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+	transition: transform 0.2s, opacity 0.2s;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+
+.example:hover:before {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.next {
+	top: 0.5em;
+	right: 0.5em;
+	color: rgba(255,255,255,0.2);
+	position: absolute;
+	text-decoration: none;
+	font-size: 1.5em;
 }
