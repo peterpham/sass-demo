@@ -1,4 +1,4 @@
-.box-square {
+.box-square, .box-rounded, .box-thick {
   border: 5px solid #bcbcbc;
   width: 150px;
   height: 150px;
@@ -10,25 +10,9 @@
 }
 
 .box-rounded {
-  border: 5px solid #bcbcbc;
-  width: 150px;
-  height: 150px;
-  margin: 1em;
-  text-align: center;
-  line-height: 150px;
-  font-size: 1.5em;
-  color: #fff;
   border-radius: 1.5em;
 }
 
 .box-thick {
-  border: 5px solid #bcbcbc;
-  width: 150px;
-  height: 150px;
-  margin: 1em;
-  text-align: center;
-  line-height: 150px;
-  font-size: 1.5em;
-  color: #fff;
   background: #aaa;
 }

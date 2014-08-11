@@ -12,14 +12,14 @@
   overflow: hidden;
   margin: 1em;
 }
+.primary-button:hover, .primary-button:focus {
+  background: #138a72;
+}
 .primary-button span {
   position: absolute;
   right: 1em;
   top: 50%;
   margin-top: -0.5em;
-}
-.primary-button:hover, .primary-button:focus {
-  background: #138a72;
 }
 
 .secondary-button {
@@ -36,12 +36,12 @@
   overflow: hidden;
   margin: 1em;
 }
+.secondary-button:hover, .secondary-button:focus {
+  background: #767c87;
+}
 .secondary-button span {
   position: absolute;
   left: 1em;
   top: 50%;
   margin-top: -0.5em;
-}
-.secondary-button:hover, .secondary-button:focus {
-  background: #767c87;
 }

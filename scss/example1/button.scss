@@ -1,4 +1,6 @@
-// basic example on nested list
+// basic example on nested selectors
+// use & to join multiple selector together 
+
 .primary-button {
 	background: #16a085;
 	color: #fff;
@@ -12,18 +14,15 @@
 	position: relative;
 	overflow: hidden;
 	margin: 1em;
+
+	span {
+		position: absolute;
+		right: 1em;
+		top: 50%;
+		margin-top: -0.5em;
+	}
+
+	&:hover, &:focus {
+		background: #138a72;
+	}	
 } 
-
-.primary-button span {
-	position: absolute;
-	right: 1em;
-	top: 50%;
-	margin-top: -0.5em;
-}
-
-.primary-button:hover {
-	background: #138a72;
-}
-.primary-button:focus {
-	background: #138a72;
-}

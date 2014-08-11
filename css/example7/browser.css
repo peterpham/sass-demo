@@ -4,22 +4,52 @@
   height: 256px;
 }
 
+/* example using loop @each */
+.logo-chrome {
+  background: url('../../images/browsers/chrome.png?1407368629') 0 0 no-repeat scroll;
+}
+
+.logo-firefox {
+  background: url('../../images/browsers/firefox.png?1407368629') 0 0 no-repeat scroll;
+}
+
+.logo-safari {
+  background: url('../../images/browsers/safari.png?1407368629') 0 0 no-repeat scroll;
+}
+
+.logo-internet-explorer {
+  background: url('../../images/browsers/internet-explorer.png?1407368629') 0 0 no-repeat scroll;
+}
+
+.logo-opera {
+  background: url('../../images/browsers/opera.png?1407368629') 0 0 no-repeat scroll;
+}
+
+/* example using compass spriting */
+.browsers-sprite, .browsers-chrome, .browsers-firefox, .browsers-internet-explorer, .browsers-opera, .browsers-safari, .browsers-ie {
+  background: url('../../images/browsers-s7524dcdddd.png') no-repeat;
+}
+
 .browsers-chrome {
-  background: url('../../images/browsers/chrome.png?1407320770') 0 0 no-repeat scroll;
+  background-position: 0 -768px;
 }
 
 .browsers-firefox {
-  background: url('../../images/browsers/firefox.png?1407320856') 0 0 no-repeat scroll;
-}
-
-.browsers-safari {
-  background: url('../../images/browsers/safari.png?1407322394') 0 0 no-repeat scroll;
+  background-position: 0 -256px;
 }
 
 .browsers-internet-explorer {
-  background: url('../../images/browsers/internet-explorer.png?1407320884') 0 0 no-repeat scroll;
+  background-position: 0 -512px;
 }
 
 .browsers-opera {
-  background: url('../../images/browsers/opera.png?1407320939') 0 0 no-repeat scroll;
+  background-position: 0 -1024px;
+}
+
+.browsers-safari {
+  background-position: 0 0;
+}
+
+.browsers-ie {
+  background-position: 0 -512px;
 }

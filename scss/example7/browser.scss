@@ -4,28 +4,24 @@
 	height: 256px;
 }
 
+/* example using loop @each */
+// see http://sass-lang.com/documentation/file.SASS_REFERENCE.html#control_directives__expressions
 $browsers: chrome firefox safari internet-explorer opera;
-
 @each $i in $browsers {
-	.browsers-#{$i} {
+	.logo-#{$i} {
 		background: image-url('browsers/#{$i}.png') 0 0 no-repeat scroll;
 	}
 }
 
 
+/* example using compass spriting */
+// see http://compass-style.org/reference/compass/utilities/sprites/
+@import "compass";
+@import "compass/utilities/sprites";
+@import "browsers/*.png";
+@include all-browsers-sprites;
 
-
-
-
-
-
-
-// @import "compass";
-// @import "compass/utilities/sprites";
-// @import "browsers/*.png";
-// @include all-browsers-sprites;
-
-
-// .browsers-ie {
-// 	@include browsers-sprite(internet-explorer);
-// }
+// below is a custom selector using internet-explorer sprite icon
+.browsers-ie {
+	@include browsers-sprite(internet-explorer);
+}

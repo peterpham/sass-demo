@@ -6,14 +6,22 @@
   text-transform: uppercase;
   display: inline-block;
   padding: 0.6em 3em;
+  -webkit-border-radius: 1.5em;
+  -moz-border-radius: 1.5em;
+  -ms-border-radius: 1.5em;
+  -o-border-radius: 1.5em;
   border-radius: 1.5em;
   border: none;
   position: relative;
   overflow: hidden;
   margin: 1em;
+  -webkit-transition: background 0.5s linear;
+  -moz-transition: background 0.5s linear;
+  -o-transition: background 0.5s linear;
+  transition: background 0.5s linear;
 }
 .primary-button:hover, .primary-button:focus {
-  background: #138a72;
+  background: #0d5d4d;
 }
 .primary-button span {
   position: absolute;
@@ -22,7 +30,7 @@
   margin-top: -0.5em;
   width: 16px;
   height: 16px;
-  background: url("../../images/tick.png") 0 0 no-repeat scroll;
+  background: url('../../images/tick.png?1407304207') 0 0 no-repeat scroll;
 }
 
 .danger-button {
@@ -33,14 +41,22 @@
   text-transform: uppercase;
   display: inline-block;
   padding: 0.6em 3em;
+  -webkit-border-radius: 1.5em;
+  -moz-border-radius: 1.5em;
+  -ms-border-radius: 1.5em;
+  -o-border-radius: 1.5em;
   border-radius: 1.5em;
   border: none;
   position: relative;
   overflow: hidden;
   margin: 1em;
+  -webkit-transition: background 0.5s linear;
+  -moz-transition: background 0.5s linear;
+  -o-transition: background 0.5s linear;
+  transition: background 0.5s linear;
 }
 .danger-button:hover, .danger-button:focus {
-  background: #ab3326;
+  background: #81261d;
 }
 .danger-button span {
   position: absolute;
@@ -49,7 +65,7 @@
   margin-top: -0.5em;
   width: 16px;
   height: 16px;
-  background: url("../../images/cross.png") 0 0 no-repeat scroll;
+  background: url('../../images/cross.png?1407304207') 0 0 no-repeat scroll;
 }
 
 .secondary-button {
@@ -60,14 +76,22 @@
   text-transform: uppercase;
   display: inline-block;
   padding: 0.6em 3em;
+  -webkit-border-radius: 1.5em;
+  -moz-border-radius: 1.5em;
+  -ms-border-radius: 1.5em;
+  -o-border-radius: 1.5em;
   border-radius: 1.5em;
   border: none;
   position: relative;
   overflow: hidden;
   margin: 1em;
+  -webkit-transition: background 0.5s linear;
+  -moz-transition: background 0.5s linear;
+  -o-transition: background 0.5s linear;
+  transition: background 0.5s linear;
 }
 .secondary-button:hover, .secondary-button:focus {
-  background: #767c87;
+  background: #5e636c;
 }
 .secondary-button span {
   position: absolute;

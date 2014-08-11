@@ -12,18 +12,12 @@
   overflow: hidden;
   margin: 1em;
 }
-
 .primary-button span {
   position: absolute;
   right: 1em;
   top: 50%;
   margin-top: -0.5em;
 }
-
-.primary-button:hover {
-  background: #138a72;
-}
-
-.primary-button:focus {
+.primary-button:hover, .primary-button:focus {
   background: #138a72;
 }

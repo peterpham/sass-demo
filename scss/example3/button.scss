@@ -1,5 +1,10 @@
 // using variables
 
+$color-default-green: #16a085;
+$color-hover-green: #138a72;
+$color-default-grey: #838993;
+$color-hover-grey: #767c87;
+
 @mixin round-button ($bgColor, $hoverBgColor) {
 	background: $bgColor;
 	color: #fff;
@@ -22,7 +27,7 @@
 
 
 .primary-button {
-	@include round-button(#16a085, #138a72);
+	@include round-button($color-default-green, $color-hover-green);
 	
 	span {
 		position: absolute;
@@ -33,7 +38,7 @@
 } 
 
 .secondary-button {
-	@include round-button(#838993, #767c87);
+	@include round-button($color-default-grey, $color-hover-grey);
 
 	span {
 		position: absolute;
